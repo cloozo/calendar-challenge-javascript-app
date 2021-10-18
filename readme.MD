@@ -24,7 +24,7 @@ momentjs, fontawesome icons.
  Overall, it was a great learning experience.
 
 link to the page can be found here: 
-[title](https://cloozo.github.io/calendar-challenge-javascript-app)
+[Calendar Challenge App](https://cloozo.github.io/calendar-challenge-javascript-app)
 
 # Technologies Used
 
