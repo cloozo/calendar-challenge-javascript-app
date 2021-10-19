@@ -2,9 +2,20 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+  text-align:center ;
+
+}
+
+.center_wrap{
+text-align: center;
+  background: red;
+  height:300px;
+  width:100%;
 }
 
 textarea{
+    text-align: right;
+    text-align: center;
   background: transparent;
  width:800px;
   border: none;
@@ -15,6 +26,7 @@ textarea{
 }
 
 .jumbotron {
+  text-align: right;
   text-align: center;
   background-color: transparent;
   color: black;
@@ -27,14 +39,20 @@ textarea{
 }
 
 .time-block{
+  
   text-align: center;
   border-radius: 1px;
+  
 }
 
 .row {
+  
+
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  height: 30px;
+  border-top: 1px solid white;
+
+  
 }
 
 .hour {
@@ -65,12 +83,82 @@ textarea{
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
+
   color: white;
 }
+
+.saveBtn9 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn10 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn11 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+.saveBtn12 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+.saveBtn13 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+.saveBtn14 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
+.saveBtn15 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+.saveBtn16 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+.saveBtn17 {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06AED5;
+  color: white;
+}
+
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+  
 }
 
 
@@ -81,32 +169,34 @@ textarea{
   color: black;
 }
 
+
+
+button{
+  width:100px;
+  height:60px;
+  background: #32B5DC;
+  border-top-right-radius: 15px;
+}
+
+
 .nine_am{
   display: flex;
   background: rgb(255, 255, 255);
   margin: 0 auto;
   width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.nine_am input{
- background: rgb(255, 255, 255);
+.nine_am textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
   width: 790px;
-  margin: 0 auto;
 height:40px;
 }
 
-
-button{
-  width:100px;
-  height:40px;
-  background: #32B5DC;
-  border-top-right-radius: 15px;
-}
-
-
+/* // */
 
 .ten_am{
   display: flex;
@@ -118,31 +208,31 @@ margin: 0 auto;
 }
 
 
-.ten_am input{
- background: rgb(255, 255, 255);
+.ten_am textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
   width: 790px;
 height:40px;
 }
 
 
-
 .eleven_am{
   display: flex;
   background: rgb(255, 255, 255);
   margin: 0 auto;
-  width:80%;
+  width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.eleven_am input{
- background: rgb(255, 255, 255);
+.eleven_am textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
-  width: 780px;
+  width: 790px;
 height:40px;
 }
-
+/*  */
 
 .noon{
   display: flex;
@@ -150,115 +240,102 @@ height:40px;
   margin: 0 auto;
   width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.noon input{
- background: rgb(255, 255, 255);
+.noon textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
-  width: 780px;
+  width: 790px;
 height:40px;
 }
-/*  */
 
+/*  */
 .one_pm{
   display: flex;
   background: rgb(255, 255, 255);
   margin: 0 auto;
-
   width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.one_pm input{
- background: rgb(255, 255, 255);
+.one_pm textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
-
-  width: 780px;
+  width: 790px;
 height:40px;
 }
-
-
+/*  */
 
 .two_pm{
   display: flex;
   background: rgb(255, 255, 255);
   margin: 0 auto;
-
   width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.two_pm input{
- background: rgb(255, 255, 255);
+.two_pm textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
-
-  width: 780px;
+  width: 790px;
 height:40px;
 }
-
-
-
-
-
+/*  */
 .three_pm{
   display: flex;
   background: rgb(255, 255, 255);
   margin: 0 auto;
-
   width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.three_pm input{
- background: rgb(255, 255, 255);
+.three_pm textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
-
-  width: 780px;
+  width: 790px;
 height:40px;
 }
-
-
-
+/*  */
 .four_pm{
   display: flex;
   background: rgb(255, 255, 255);
   margin: 0 auto;
-
   width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.four_pm input{
- background: rgb(255, 255, 255);
+.four_pm textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
-
-  width: 780px;
+  width: 790px;
 height:40px;
 }
-
-
-
+/*  */
 
 
 .five_pm{
   display: flex;
   background: rgb(255, 255, 255);
   margin: 0 auto;
-
   width: 80%;
 height:40px;
+margin: 0 auto;
 }
 
 
-.five_pm input{
- background: rgb(255, 255, 255);
+.five_pm textarea{
+ background: rgb(204, 157, 157);
   margin: 0 auto;
-  width: 780px;
+  width: 790px;
 height:40px;
 }
-

@@ -32,63 +32,73 @@
     <div class="container">
  <!-- Timeblocks go here -->
 
-
-<div  class="nine_am" class="row time-block" >
-<label for="hour" class="hour">9 AM</label>
-<input name="nineam" id="nine_am"><br><button id="saveBtn" ><i class="fas fa-save"></i></button>
-</div>
-
-
-
-<div  class="ten_am">
-  <label for="hour" class="hour">10 AM</label>
-  <input type="text" class="row time-block"  name="nineam" id="dix_am"><br><button  id="saveBtn"><i class="fas fa-save"></i></button>
+ <div  class="nine_am" id="9am-row">
+  <label for="hour" class="hour" id="time-block 9am-hour">9 AM</label>
+  <textarea id="9" type="text" class="row time-block"  name="nineam"  class="form-control description col-7 col-xs-1"></textarea>
+  <button  id="saveBtn9"><i class="fas fa-save"></i></button>
   </div>
 
-
-
-  <div  class="eleven_am">
-    <label for="hour" class="hour">11 AM</label>
-    <input type="text"  class="row time-block"  name="nineam" id="eleven_am"><br><button id="saveBtn" ><i class="fas fa-save"></i></button>
+  
+  
+  <div  class="ten_am" id="10am-row">
+    <label for="hour" class="hour" id="time-block 10am-hour">10 AM</label>
+    <textarea id="10" type="text" class="row time-block"  name="tenam"  class="form-control description col-7 col-xs-1"></textarea>
+    <button  id="saveBtn10"><i class="fas fa-save"></i></button>
     </div>
-
-
-    <div  class="noon">
-      <label for="hour" class="hour">12 PM</label>
-      <input type="text"  class="row time-block"  name="nineam" id="noon"><br><button id="saveBtn" ><i class="fas fa-save"></i></button>
+  
+  
+  
+    <div  class="eleven_am" id="11am-row">
+      <label for="hour" class="hour" id="time-block 11am-hour">11 AM</label>
+      <textarea id="11" type="text" class="row time-block"  name="elevenam"  class="form-control description col-7 col-xs-1"></textarea>
+      <button  id="saveBtn11"><i class="fas fa-save"></i></button>
       </div>
-
-      <div  class="one_pm">
-        <label for="hour" class="hour">1 pm</label>
-        <input type="text"  class="row time-block"  name="onepm" id="one_pm"><br><button id="saveBtn" ><i class="fas fa-save"></i></button>
+  
+  
+      <div  class="noon" id="12pm-row">
+        <label for="hour" class="hour" id="time-block noon-hour">12 pm</label>
+        <textarea id="12" type="text" class="row time-block"  name="noon"  class="form-control description col-7 col-xs-1"></textarea>
+        <button  id="saveBtn12"><i class="fas fa-save"></i></button>
         </div>
 
-
-        <div  class="two_pm">
-          <label for="hour" class="hour">2 PM</label>
-          <input type="text"  class="row time-block"  name="nineam" id="nine_am"><br><button id="saveBtn" ><i class="fas fa-save"></i></button>
+  
+        <div  class="one_pm" id="onepm-row">
+          <label for="hour" class="hour" id="time-block 9am-hour">1 PM</label>
+          <textarea id="13" type="text" class="row time-block"  name="onepm"  class="form-control description col-7 col-xs-1"></textarea>
+          <button  id="saveBtn13"><i class="fas fa-save"></i></button>
           </div>
-
-          <div  class="three_pm">
-            <label for="hour" class="hour">3 PM</label>
-            <input type="text"  class="row time-block"  name="nineam" id="nine_am"><br><button id="saveBtn"><i class="fas fa-save"></i></button>
+  
+          <div  class="two_pm" id="twopm-row">
+            <label for="hour" class="hour" id="time-block 9am-hour">2 PM</label>
+            <textarea id="14" type="text" class="row time-block"  name="twopm"  class="form-control description col-7 col-xs-1"></textarea>
+            <button  id="saveBtn14"><i class="fas fa-save"></i></button>
             </div>
-
-            <div  class="four_pm">
-              <label for="hour" class="hour">4 PM</label>
-              <input type="text"  class="row time-block"  name="nineam" id="nine_am"><br><button id="saveBtn"><i class="fas fa-save"></i></button>
+  
+            <div  class="three_pm" id="threepm-row">
+              <label for="hour" class="hour" id="time-block 9am-hour">3 PM</label>
+              <textarea id="15" type="text" class="row time-block"  name="threepm"  class="form-control description col-7 col-xs-1"></textarea>
+              <button  id="saveBtn15"><i class="fas fa-save"></i></button>
               </div>
-
-              <div  class="five_pm">
-                <label for="hour" class="hour">5 PM</label>
-                <input type="text" class="row time-block"   name="nineam" id="nine_am"><br><button id="saveBtn"><i class="fas fa-save"></i></button>
+  
+              <div  class="four_pm" id="fourpm-row">
+                <label for="hour" class="hour" id="time-block 9am-hour">4 PM</label>
+                <textarea id="16" type="text" class="row time-block"  name="fourpm"  class="form-control description col-7 col-xs-1"></textarea>
+                <button  id="saveBtn16"><i class="fas fa-save"></i></button>
                 </div>
 
+                
+                <div  class="five_pm" id="fivepm-row">
+                  <label for="hour" class="hour" id="time-block 9am-hour">5 PM</label>
+                  <textarea id="17" type="text" class="row time-block"  name="fivepm"  class="form-control description col-7 col-xs-1"></textarea>
+                  <button  id="saveBtn17"><i class="fas fa-save"></i></button>
+                  </div>
+ 
 
+</div>
 <!--  -->
 
      
-    </div>
+  
     <script src="lib/moment/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
