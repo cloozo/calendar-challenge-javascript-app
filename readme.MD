@@ -23,7 +23,7 @@ The user  is allowed to save events for each hour of the day.
  Overall, it was a great learning experience and this activity has helped me greatly advanced in my road to becoming a web developper.
 
 ## link to the page can be found here: 
-[Click here to see Calendar Challenge App]('https://cloozo.github.io/calendar-challenge-javascript-app')
+[Click here to see Calendar Challenge App](https://cloozo.github.io/cloozo-calendar-challenge-javascript-app/)
 
 
 ---

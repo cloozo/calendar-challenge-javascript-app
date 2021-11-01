@@ -2,6 +2,9 @@
 var todayDate = new Date();
 var formatDate = moment(todayDate).format('dddd, MMMM DD, YYYY')
 var dateOutput = document.querySelector("#currentDay").innerHTML =`${formatDate}`;
+//converting to military time
+var currentHour = moment().format("H");
+console.log(currentHour);
 // Getting local storage data
 var nineData = localStorage.getItem('textAreaKey9');
 var tenData = localStorage.getItem('textAreaKey10');
@@ -12,11 +15,10 @@ var twopmData = localStorage.getItem('textAreaKey14');
 var threepmData = localStorage.getItem('textAreaKey15');
 var fourpmData = localStorage.getItem('textAreaKey16');
 var fivepmData = localStorage.getItem('textAreaKey17');
-//converting to military time
-var currentHour = moment().format("H");
-console.log(currentHour);
+
 //this line of code updates the value from the localStorage
 var getTextArea9 = document.getElementById("9");
+getTextArea9.value = nineData ;
 
 var getTextArea10 = document.getElementById("10");
 getTextArea10.value = tenData ;
@@ -44,23 +46,21 @@ getTextArea17.value = fivepmData ;
 
 
 
+console.log(currentHour)
+  // getting 9 am hour
 
-// getting nine am hour
-getTextArea9.value = nineData ;
-if  (currentHour < 9){
-  console.log("GREY -past ")
-  getTextArea9.style.backgroundColor ="grey"
-}
-
-if  (currentHour > 9){
-  console.log("lightblue -future")
-  getTextArea9.style.backgroundColor ="lightblue"
-}
-
-if  (currentHour  ===  9){
-  console.log("GREEN- present" )
-  getTextArea9.style.backgroundColor ="green"
-}
+  if  (currentHour > 9 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea9.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 9 ){
+       console.log("RED -present ")
+       getTextArea9.style.backgroundColor ="red";
+     }
+   if  (currentHour < 9 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea9.style.backgroundColor ="lightgreen";
+   }
 /* nine am function */
 var saveButton9 = document.querySelector("#saveBtn9").addEventListener("click", nine_amFunction)
 function nine_amFunction(){
@@ -73,21 +73,20 @@ localStorage.setItem("textAreaKey9", getTextArea9);
 
 
 
-//This code will allow the 10:am time block to load
-getTextArea10.value = tenData ;
-if  (currentHour < 10){
-  console.log("GREY -past ")
-  getTextArea10.style.backgroundColor ="grey"
-}
-if  (currentHour > 10){
-  console.log("lightblue -future")
-  getTextArea10.style.backgroundColor ="lightblue"
-}
 
-if  (currentHour  ===  10){
-  console.log("GREEN- present" )
-  getTextArea10.style.backgroundColor ="green"
-}
+  // getting 10 
+  if  (currentHour > 10 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea10.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 10 ){
+       console.log("RED -present ")
+       getTextArea10.style.backgroundColor ="red";
+     }
+   if  (currentHour < 10 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea10.style.backgroundColor ="lightgreen";
+   }
 /* Getting 10 am function */
 var saveButton10 = document.querySelector("#saveBtn10").addEventListener("click", ten_amFunction)
 function ten_amFunction(){
@@ -100,20 +99,19 @@ localStorage.setItem("textAreaKey10", getTextArea10);
 
 
 
-//This code will allow the 11:am time block to load
-getTextArea11.value = elevenData ;
-if  (currentHour < 11){
-  console.log("GREY -past ")
-  getTextArea11.style.backgroundColor ="grey"
-}
-if  (currentHour > 11){
-  console.log("lightblue -future")
-  getTextArea11.style.backgroundColor ="lightblue"
-}
-if  (currentHour  ===  11){
-  console.log("GREEN- present" )
-  getTextArea11.style.backgroundColor ="green"
-}
+  // getting 11 
+  if  (currentHour > 11 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea11.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 11 ){
+       console.log("RED -present ")
+       getTextArea11.style.backgroundColor ="red";
+     }
+   if  (currentHour < 11 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea11.style.backgroundColor ="lightgreen";
+   }
 //This code will allow the 11:am time block to load
 var saveButton11 = document.querySelector("#saveBtn11").addEventListener("click", eleven_amFunction)
 function eleven_amFunction(){
@@ -124,20 +122,19 @@ localStorage.setItem("textAreaKey11", getTextArea11);
 
 
 
-//This code will allow the noon  time block to load
-getTextArea12.value = noonData ;
-if  (currentHour < 12){
-  console.log("GREY -past ")
-  getTextArea12.style.backgroundColor ="grey"
-}
-if  (currentHour > 12){
-  console.log("lightblue -future")
-  getTextArea12.style.backgroundColor ="lightblue"
-}
-if  (currentHour  ===  12){
-  console.log("GREEN- present" )
-  getTextArea12.style.backgroundColor ="green"
-}
+  // getting 12 
+  if  (currentHour > 12 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea12.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 12 ){
+       console.log("RED -present ")
+       getTextArea12.style.backgroundColor ="red";
+     }
+   if  (currentHour < 12 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea12.style.backgroundColor ="lightgreen";
+   }
 //This code will allow the 11:am time block to load
 var saveButton12 = document.querySelector("#saveBtn12").addEventListener("click", noon_Function)
 function noon_Function(){
@@ -148,20 +145,25 @@ localStorage.setItem("textAreaKey12", getTextArea12);
 
 
 
-//This code will allow 1 pm  time block to load
-getTextArea13.value = onepmData ;
-if  (currentHour < 13){
-  console.log("GREY -past ")
-  getTextArea13.style.backgroundColor ="grey"
-}
-if  (currentHour > 13){
-  console.log("lightblue -future")
-  getTextArea13.style.backgroundColor ="lightblue"
-}
-if  (currentHour  ===  13){
-  console.log("GREEN- present" )
-  getTextArea13.style.backgroundColor ="green"
-}
+
+
+
+
+
+
+  // getting 1 PM
+  if  (currentHour > 13 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea13.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 13 ){
+       console.log("RED -present ")
+       getTextArea13.style.backgroundColor ="red";
+     }
+   if  (currentHour < 13 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea13.style.backgroundColor ="lightgreen";
+   }
 //This code will allow the 11:am time block to load
 var saveButton13 = document.querySelector("#saveBtn13").addEventListener("click", onepm_Function)
 function onepm_Function(){
@@ -173,20 +175,28 @@ localStorage.setItem("textAreaKey13", getTextArea13);
 
 
 
-//This code will allow 2 pm  time block to load
-getTextArea14.value = twopmData ;
-if  (currentHour < 14){
-  console.log("GREY -past ")
-  getTextArea14.style.backgroundColor ="grey"
-}
-if  (currentHour > 14){
-  console.log("lightblue -future")
-  getTextArea14.style.backgroundColor ="lightblue"
-}
-if  (currentHour  ===  14){
-  console.log("GREEN- present" )
-  getTextArea14.style.backgroundColor ="green"
-}
+
+
+
+
+
+
+
+
+
+  // getting 1 PM
+  if  (currentHour > 14 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea14.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 14 ){
+       console.log("RED -present ")
+       getTextArea14.style.backgroundColor ="red";
+     }
+   if  (currentHour < 14 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea14.style.backgroundColor ="lightgreen";
+   }
 //This code will allow the  2pm time block to load
 var saveButton14 = document.querySelector("#saveBtn14").addEventListener("click", twopm_Function)
 function twopm_Function(){
@@ -197,20 +207,24 @@ localStorage.setItem("textAreaKey14", getTextArea14);
 
 
 
-//This code will allow the 3 pm  time block to load
-getTextArea15.value = twopmData ;
-if  (currentHour < 15){
-  console.log("GREY -past ")
-  getTextArea15.style.backgroundColor ="grey"
-}
-if  (currentHour > 15){
-  console.log("lightblue -future")
-  getTextArea15.style.backgroundColor ="lightblue"
-}
-if  (currentHour  ===  15){
-  console.log("GREEN- present" )
-  getTextArea15.style.backgroundColor ="green"
-}
+
+
+
+
+
+  // getting 1 PM
+  if  (currentHour > 15 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea15.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 15 ){
+       console.log("RED -present ")
+       getTextArea15.style.backgroundColor ="red";
+     }
+   if  (currentHour < 15 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea15.style.backgroundColor ="lightgreen";
+   }
 //This code will allow the 11:am time block to load
 var saveButton15 = document.querySelector("#saveBtn15").addEventListener("click", threepm_Function)
 function threepm_Function(){
@@ -218,23 +232,6 @@ var getTextArea15 = document.getElementById("15").value;
   // save in localStorage
 localStorage.setItem("textAreaKey15", getTextArea15);
 };
-
-
-
-//This code will allow the 4 pm  time block to load
-getTextArea16.value = fourpmData ;
-if  (currentHour < 16){
-  console.log("GREY -past ")
-  getTextArea16.style.backgroundColor ="grey"
-}
-if  (currentHour > 16){
-  console.log("lightblue -future")
-  getTextArea16.style.backgroundColor ="lightblue"
-}
-if  (currentHour  ===  16){
-  console.log("GREEN- present" )
-  getTextArea16.style.backgroundColor ="green"
-}
 //This code will allow the 11:am time block to load
 var saveButton16 = document.querySelector("#saveBtn16").addEventListener("click", fourpm_Function)
 function fourpm_Function(){
@@ -244,20 +241,44 @@ localStorage.setItem("textAreaKey16", getTextArea16);
 };
 
 
-//This code will allow the 4 pm  time block to load
-getTextArea17.value = fivepmData ;
-if  (currentHour < 17){
-  console.log("GREY -past ")
-  getTextArea17.style.backgroundColor ="grey"
-}
-if  (currentHour > 17){
-  console.log("lightblue -future")
-  getTextArea17.style.backgroundColor ="lightblue"
-}
-if  (currentHour  ===  17){
-  console.log("GREEN- present" )
-  getTextArea17.style.backgroundColor ="green"
-}
+
+
+
+
+
+
+
+
+
+  // getting 1 PM
+  if  (currentHour > 16 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea16.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 16 ){
+       console.log("RED -present ")
+       getTextArea16.style.backgroundColor ="red";
+     }
+   if  (currentHour < 16 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea16.style.backgroundColor ="lightgreen";
+   }
+
+
+  // getting 9 am hour
+  if  (currentHour > 17 ){
+    console.log("LIGHTGREY - past ")
+    getTextArea17.style.backgroundColor ="lightgrey";
+     }
+     if  (currentHour === 17 ){
+       console.log("RED -present ")
+       getTextArea17.style.backgroundColor ="red";
+     }
+   if  (currentHour < 17 ){
+     console.log("LIGHTGREEN -future ")
+     getTextArea17.style.backgroundColor ="lightgreen";
+   }
+
 //This code will allow the 11:am time block to load
 var saveButton17 = document.querySelector("#saveBtn17").addEventListener("click", fivepm_Function)
 function fivepm_Function(){
